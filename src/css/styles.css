@@ -75,21 +75,33 @@ button:hover {
 }
 
 .loader {
+  display: inline-block;
   width: 50px;
   height: 50px;
   border: 5px solid #ccc;
   border-top-color: #4e75ff;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin-bottom: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 1000;
+  margin: 12px auto 24px;
 }
 
-.hidden {
+.load-more.hidden,
+.loader.hidden {
   display: none;
+}
+
+.load-more {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4e75ff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 16px auto;
+}
+.load-more:hover {
+  background-color: #6c8cff;
 }
 
 @keyframes spin {
